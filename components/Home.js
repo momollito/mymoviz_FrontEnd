@@ -41,7 +41,7 @@ function Home() {
   
   useEffect(() => {
     async function fetchMovies() {
-      const rawRes = await fetch("'https://mymoviz-back-end.vercel.app/movies");
+      const rawRes = await fetch("https://mymoviz-back-end.vercel.app/movies");
       const jsonRes = await rawRes.json();
       setMovieList(jsonRes.movies);
     }
